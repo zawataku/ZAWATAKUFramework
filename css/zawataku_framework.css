@@ -1,0 +1,84 @@
+/*
+zawataku CSS framework
+
+(c)2023 zawataku all rights reserved.
+Released under the MIT license
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+@font-face {
+    font-family: 'Rounded M Plus 1c Regular';
+    src: url(../fonts/MPLUSRounded1c-Regular.ttf) format(truetype);
+}
+
+@font-face{
+    font-family: 'Rounded M Plus 1c Bold';
+    src: url(../fonts/MPLUSRounded1c-Bold.ttf) format(truetype);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	margin: auto;
+	overflow: hidden;
+}
+
+.w-800 { width: 800px; }
+.w-900 { width: 900px; }
+.w-1000 { width: 1000px; }
+.w-1100 { width: 1100px; }
+.w-1200 { width: 1200px; }
+
+h1,h2,h3,h4,h5,h6 {
+	margin-top: 40px;
+	margin-bottom: 10px;
+    font-family: 'Rounded M Plus 1c Bold';
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 26px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+.border-bottom{
+    border-bottom: solid 5px #FF7043;
+}
