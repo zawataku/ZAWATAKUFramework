@@ -28,57 +28,223 @@ SOFTWARE.
     src: url(../fonts/MPLUSRounded1c-Regular.ttf) format(truetype);
 }
 
-@font-face{
+@font-face {
     font-family: 'Rounded M Plus 1c Bold';
     src: url(../fonts/MPLUSRounded1c-Bold.ttf) format(truetype);
 }
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rounded M Plus 1c Regular';
+    transform: rotateZ(0.03deg);
+    /*フォントの乱れを修正*/
 }
 
 .wrap {
-	margin: auto;
-	overflow: hidden;
+    margin: auto;
+    overflow: hidden;
 }
 
-.w-800 { width: 800px; }
-.w-900 { width: 900px; }
-.w-1000 { width: 1000px; }
-.w-1100 { width: 1100px; }
-.w-1200 { width: 1200px; }
+.w-800 {
+    width: 800px;
+}
 
-h1,h2,h3,h4,h5,h6 {
-	margin-top: 40px;
-	margin-bottom: 10px;
+.w-900 {
+    width: 900px;
+}
+
+.w-1000 {
+    width: 1000px;
+}
+
+.w-1100 {
+    width: 1100px;
+}
+
+.w-1200 {
+    width: 1200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 40px;
+    margin-bottom: 10px;
     font-family: 'Rounded M Plus 1c Bold';
 }
 
 h1 {
-	font-size: 30px;
+    font-size: 30px;
 }
 
 h2 {
-	font-size: 26px;
+    font-size: 26px;
 }
 
 h3 {
-	font-size: 22px;
+    font-size: 22px;
 }
 
 h4 {
-	font-size: 18px;
+    font-size: 18px;
 }
 
 h5 {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 h6 {
-	font-size: 12px;
+    font-size: 12px;
 }
 
-.border-bottom{
-    border-bottom: solid 5px #FF7043;
+.border-bottom {
+    border-bottom: solid 5px #FF5722;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="serch"],
+input[type="tel"],
+input[type="date"],
+input[type="week"],
+input[type="time"] {
+    width: 100%;
+    margin: 5px 0 5px 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="serch"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus {
+    border: 2px solid #FFAB91;
+    transition: all 0.5s ease 0s;
+    z-index: 10;
+    outline: 0;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    width: 15%;
+    margin: 5px 0 5px 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    background-color: #FF5722;
+    box-sizing: border-box;
+    color: #FFF;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #D84315;
+    transition: all 0.5s ease 0s;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    display: none;
+}
+
+.radio,
+.checkbox {
+    box-sizing: border-box;
+    -webkit-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+    position: relative;
+    display: inline-block;
+    margin: 5px 0 5px 0;
+    padding: 12px 12px 12px 42px;
+    border-radius: 25px;
+    background-color: #f6f7f8;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.radio:hover,
+.checkbox:hover {
+    background-color: #FBE9E7;
+}
+
+.radio:hover:after,
+.checkbox:hover:after {
+    border-color: #FF5722;
+}
+
+.radio:after,
+.checkbox:after {
+    -webkit-transition: border-color 0.2s linear;
+    transition: border-color 0.2s linear;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    display: block;
+    margin-top: -10px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #bbb;
+    border-radius: 6px;
+    content: '';
+}
+
+.radio:before {
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    display: block;
+    margin-top: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF5722;
+    content: '';
+    opacity: 0;
+}
+
+input[type=radio]:checked+.radio:before {
+    opacity: 1;
+}
+
+.checkbox:before {
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    display: block;
+    margin-top: -7px;
+    width: 5px;
+    height: 9px;
+    border-right: 3px solid #FF5722;
+    border-bottom: 3px solid #FF5722;
+    content: '';
+    opacity: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+input[type=checkbox]:checked+.checkbox:before {
+    opacity: 1;
 }
