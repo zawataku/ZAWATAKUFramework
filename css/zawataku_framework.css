@@ -36,6 +36,7 @@ SOFTWARE.
 * {
     margin: 0;
     padding: 0;
+    color: #333333;
     font-family: 'Rounded M Plus 1c Regular';
     transform: rotateZ(0.03deg);
     /*フォントの乱れを修正*/
@@ -160,7 +161,7 @@ input[type="reset"] {
     font-size: 16px;
     border-radius: 25px;
     border: 2px solid #ddd;
-    background-color: #FF5722;
+    background-color: #FF8A65;
     box-sizing: border-box;
     color: #FFF;
     cursor: pointer;
@@ -169,8 +170,8 @@ input[type="reset"] {
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background-color: #D84315;
-    transition: all 0.5s ease 0s;
+    background-color: #FF5722;
+    transition: all 1s ease 0s;
 }
 
 input[type=radio],
@@ -302,4 +303,46 @@ img {
 
 .menu-item-5 {
     width: 20%;
+}
+
+table{
+    width: 100%;
+    border-radius: 10px;
+    border-spacing: 0;
+    border: none;
+    border-left: 2px solid #ddd;
+    border-top: 2px solid #ddd;
+}
+
+table th{
+    background-color: #FFCCBC;
+}
+
+table tr>*{
+    padding: 5px 10px;
+    border: none;
+    border-right: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
+table tr:first-child>*:first-child{
+    border-radius: 10px 0 0 0;
+}
+
+table tr:first-child>*:last-child{
+    border-radius: 0 10px 0 0;
+}
+
+table tr:last-child>*:first-child{
+    border-radius: 0 0 0 10px;
+}
+
+table tr:last-child>*:last-child{
+    border-radius: 0 0 10px 0;
+}
+
+footer{
+    background-color: #FF8A65;
+    margin: 30px 0 0 0;
+    min-height: 50px;
 }
