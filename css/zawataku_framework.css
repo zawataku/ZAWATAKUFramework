@@ -66,6 +66,22 @@ SOFTWARE.
     width: 1200px;
 }
 
+.border-top {
+    border-top: solid 5px #FF5722;
+}
+
+.border-right {
+    border-right: solid 5px #FF5722;
+}
+
+.border-bottom {
+    border-bottom: solid 5px #FF5722;
+}
+
+.border-left {
+    border-left: solid 5px #FF5722;
+}
+
 h1,
 h2,
 h3,
@@ -74,6 +90,7 @@ h5,
 h6 {
     margin-top: 40px;
     margin-bottom: 10px;
+    padding: 0 5px 0 5px;
     font-family: 'Rounded M Plus 1c Bold';
 }
 
@@ -99,10 +116,6 @@ h5 {
 
 h6 {
     font-size: 12px;
-}
-
-.border-bottom {
-    border-bottom: solid 5px #FF5722;
 }
 
 input[type="text"],
@@ -247,4 +260,46 @@ input[type=radio]:checked+.radio:before {
 
 input[type=checkbox]:checked+.checkbox:before {
     opacity: 1;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.global-menu {
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.menu-item-3,
+.menu-item-4,
+.menu-item-5 {
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-family: 'Rounded M Plus 1c Bold';
+    color: #bbb;
+}
+
+.menu-item-3:hover,
+.menu-item-4:hover,
+.menu-item-5:hover {
+    background-color: #FF8A65;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.menu-item-3{
+    width: 33.3%;
+}
+
+.menu-item-4 {
+    width: 25%;
+}
+
+.menu-item-5 {
+    width: 20%;
 }
