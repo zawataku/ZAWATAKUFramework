@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zawataku framework sample</title>
     <link rel="stylesheet" href="./css/zawataku_framework.css">
+    <link rel="stylesheet" href="./css/common.css">
+
+    <style>
+        .gaming {
+            height: 200px;
+        }
+
+        footer p {
+            margin: 15px 10px 15px 10px;
+            color: #fff;
+            font-family: "Rounded M Plus 1c Bold";
+        }
+    </style>
 </head>
 
 <body>
@@ -26,15 +39,15 @@
         <h1 class="border-bottom">
             Input
         </h1>
-        <p><input type="text" placeholder="テキスト"></p>
-        <p><input type="email" placeholder="メールアドレス"></p>
-        <p><input type="password" placeholder="パスワード"></p>
-        <p><input type="date"></p>
-        <p><input type="week"></p>
-        <p><input type="time"></p>
-        <p><input type="button" value="ボタン"></p>
-        <p><input type="submit" value="送信"></p>
-        <p><input type="reset" value="リセット"></p>
+        <p><input type="text" class="w-100-pct" placeholder="テキスト"></p>
+        <p><input type="email" class="w-100-pct" placeholder="メールアドレス"></p>
+        <p><input type="password" class="w-100-pct" placeholder="パスワード"></p>
+        <p><input type="date" class="w-100-pct"></p>
+        <p><input type="week" class="w-100-pct"></p>
+        <p><input type="time" class="w-100-pct"></p>
+        <p><input type="button" class="w-20-pct" value="ボタン"></p>
+        <p><input type="submit" class="w-20-pct" value="送信"></p>
+        <p><input type="reset" class="w-20-pct" value="リセット"></p>
         <p><input type="radio" id="radio" value="ラジオボタン">
             <label for="radio" class="radio">ラジオボタン</label>　←ラジオボタンにはlabel要素を付けてください
         </p> <!--ラジオボタンはlabelをつけること-->
@@ -95,23 +108,52 @@
             </tr>
         </table>
 
-    </div>
-
-    <style>
-        footer p {
-            margin: 15px 0 15px 0;
-            color: #fff;
-            font-family: "Rounded M Plus 1c Bold";
-        }
-    </style>
-
-    <footer>
-        <div class="wrap w-1000">
-            <p>
-                Copyright 2023 zawataku All Rights Reserved.
-            </p>
+        <h1 class="border-bottom">
+            Columns（※分かりやすいように色付けしてあります）
+        </h1>
+        <div class="column">
+            <div class="column-left-standard">
+                <h3>Standard Width</h3>
+            </div>
+            <div class="column-right-standard">
+                <h3>Standard Width</h3>
+            </div>
         </div>
-    </footer>
+        <br>
+        <hr>
+        <br>
+        <div class="column">
+            <div class="column-left-narrow">
+                <h3>Narrow Width</h3>
+            </div>
+            <div class="column-right-wide">
+                <h3>Wide Width</h3>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="column">
+            <div class="column-left-wide">
+                <h3>Wide Width</h3>
+            </div>
+            <div class="column-right-narrow">
+                <h3>Narrow Width</h3>
+            </div>
+        </div>
+
+
+        <h1 class="border-bottom">Gaming(おまけ)</h1>
+        <div class="gaming"></div>
+
+        <footer>
+            <div class="wrap w-1000">
+                <p>
+                    Copyright 2023 zawataku All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
