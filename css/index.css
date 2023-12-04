@@ -1,0 +1,19 @@
+/***********************************
+*	index.htmlレイアウト制御用CSS	*
+***********************************/
+[class*="column-"] {
+    min-height: 100px;
+    background-color: #FFCCBC;
+    border: 3px solid #333333;
+    text-align: center;
+}
+
+.gaming {
+    height: 200px;
+}
+
+footer p {
+    margin: 15px 10px 15px 10px;
+    color: #fff;
+    font-family: "Rounded M Plus 1c Bold";
+}

@@ -23,6 +23,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+
+/***********************************
+*	fonts	*
+***********************************/
 @font-face {
     font-family: 'Rounded M Plus 1c Regular';
     src: url(../fonts/MPLUSRounded1c-Regular.ttf) format(truetype);
@@ -42,11 +46,24 @@ SOFTWARE.
     /*フォントの乱れを修正*/
 }
 
+b,
+strong {
+    font-family: 'Rounded M Plus 1c Bold';
+}
+
+
+/***********************************
+*	Wrap	*
+***********************************/
 .wrap {
     margin: auto;
     overflow: hidden;
 }
 
+
+/***********************************
+*	Width	*
+***********************************/
 .w-800 {
     width: 800px;
 }
@@ -87,10 +104,10 @@ SOFTWARE.
     width: 100%;
 }
 
-.side-shadow {
-    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4);
-}
 
+/***********************************
+*	Border	*
+***********************************/
 .border-top {
     border-top: solid 5px #FF5722;
 }
@@ -107,6 +124,10 @@ SOFTWARE.
     border-left: solid 5px #FF5722;
 }
 
+
+/***********************************
+*	HeadLine	*
+***********************************/
 h1,
 h2,
 h3,
@@ -143,6 +164,10 @@ h6 {
     font-size: 12px;
 }
 
+
+/***********************************
+*	Input	*
+***********************************/
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -302,10 +327,48 @@ button:hover {
     transition: all 1s ease 0s;
 }
 
+
+/***********************************
+*	Link Text	*
+***********************************/
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    position: relative;
+    padding: 0.1em 0.3em;
+    display: inline-block;
+    transition: .3s;
+    color: #007bff;
+}
+
+a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #007bff;
+    transition: .3s;
+    transform: translateX(-50%);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+
+/***********************************
+*	Image	*
+***********************************/
 img {
     border-radius: 10px;
 }
 
+
+/***********************************
+*	Menu Item	*
+***********************************/
 .global-menu {
     overflow: hidden;
     background-color: #FFF;
@@ -343,6 +406,10 @@ img {
     width: 20%;
 }
 
+
+/***********************************
+*	Table	*
+***********************************/
 table {
     width: 100%;
     border-radius: 10px;
@@ -381,8 +448,9 @@ table tr:last-child>*:last-child {
 }
 
 
-/*column*/
-
+/***********************************
+*	Column	*
+***********************************/
 .column {
     margin: auto;
     overflow: hidden;
@@ -409,13 +477,9 @@ table tr:last-child>*:last-child {
 }
 
 
-b,
-strong {
-    font-family: 'Rounded M Plus 1c Bold';
-}
-
-/*gaming*/
-
+/***********************************
+*	Gaming	*
+***********************************/
 .gaming {
     animation: 1s gaming linear infinite !important;
 }
@@ -454,6 +518,10 @@ strong {
     }
 }
 
+
+/***********************************
+*	Footer	*
+***********************************/
 footer {
     background-color: #FF8A65;
     margin: 30px 0 0 0;
