@@ -25,6 +25,30 @@ SOFTWARE.
 
 
 /***********************************
+*	RESET	*
+***********************************/
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-tap-highlight-color: transparent;
+    /* 3*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+
+/***********************************
 *	fonts	*
 ***********************************/
 @font-face {
@@ -38,7 +62,7 @@ SOFTWARE.
     font-weight: 500;
     font-style: normal;
     font-family: 'Rounded M Plus 1c Bold';
-    src: url(../fonts/MPLUSRounded1c-Medium.ttf) format(truetype);
+    src: url(../fonts/MPLUSRounded1c-Bold.ttf) format(truetype);
 }
 
 * {
