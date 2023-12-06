@@ -20,12 +20,16 @@ footer p {
 
 header{
     background-color: #FF8A65;
-    height: 70px;
+    height: 100px;
     text-align: center;
     margin-bottom: 30px;
 }
 
 header p strong{
     font-size: xxx-large;
+    color: #FFF;
+}
+
+header p{
     color: #FFF;
 }
