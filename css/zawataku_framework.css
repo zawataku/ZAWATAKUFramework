@@ -70,6 +70,7 @@ h6 {
     padding: 0;
     color: #333333;
     font-family: 'Rounded M Plus 1c Regular';
+    font-weight: inherit;
     transform: rotateZ(0.03deg);
     /*フォントの乱れを修正*/
 }
