@@ -24,11 +24,13 @@ header{
     margin-bottom: 30px;
 }
 
-header p strong{
+.header-title{
     font-size: xxx-large;
+    font-weight: inherit;
     color: #FFF;
+    font-family: "Rounded M Plus 1c Bold";
 }
 
-header p{
+.update-date{
     color: #FFF;
 }

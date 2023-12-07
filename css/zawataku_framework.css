@@ -357,7 +357,7 @@ input[type=checkbox]:checked+.checkbox:before {
 ***********************************/
 a {
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: inherit;
     position: relative;
     padding: 0.1em 0.3em;
     display: inline-block;
